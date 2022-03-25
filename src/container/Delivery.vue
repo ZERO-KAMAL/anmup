@@ -4,7 +4,7 @@
       <h3 class="title">Platform Designed For You</h3>
     </div>
 
-    <div class="delivery__content ">
+    <div class="delivery__content">
       <div class="container">
         <div class="row">
           <div
@@ -12,7 +12,7 @@
             :key="delivery.id"
             v-for="delivery in deliveries"
           >
-            <div class="delivery__box">
+            <div class="delivery__box h-100">
               <div class="delivery__box-img">
                 <img :src="delivery.image" :alt="delivery.title" />
               </div>
@@ -29,6 +29,7 @@
 </template>
 
 <script>
+
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Service",
